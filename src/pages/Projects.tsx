@@ -35,7 +35,7 @@ const Projects = () => {
       image: scensoraHero
     },
     {
-      title: "Speak2Make",
+      title: "Speak2Megh",
       subtitle: "Thought Leadership",
       description: "Creative platform exploring migration, identity, and philosophy through the immigrant journey series ABCD and humorous East–West philosophy debates featuring Adi Shankaracharya vs Socrates.",
       features: [

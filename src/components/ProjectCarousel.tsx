@@ -23,7 +23,7 @@ const projects = [
     image: scensoraHero
   },
   {
-    title: "Speak2Make",
+    title: "Speak2Megh",
     subtitle: "Thought Leadership",
     description: "Creative platform exploring migration, identity, and philosophy through innovative content series.",
     status: "Digital Content Platform",
