@@ -1,14 +1,14 @@
 import { ExternalLink, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import pradallyHero from '@/assets/pridally-hero.jpg';
+import pradallyHero from '@/assets/Pridally_logo.jpg';
 import scensoraHero from '@/assets/scensora-hero.jpg';
-import speak2makeHero from '@/assets/speak2make-hero.jpg';
+import speak2makeHero from '@/assets/speak2megh.jpeg';
 
 const Projects = () => {
   const projects = [
     {
       title: "PRIDalLY",
-      subtitle: "LGBTQIA+ Health App",
+      subtitle: "One stop health and care solution",
       description: "A new model of inclusive healthcare based on the FiHolistic model covering physical, mental, social, reproductive, and sexual health. Personalized care, medication support, and safe resources for the LGBTQIA+ community.",
       features: [
         "Inclusive healthcare platform",
@@ -16,13 +16,13 @@ const Projects = () => {
         "Safe community resources",
         "Mental health integration"
       ],
-      status: "NHS Clinical Entrepreneur Programme",
+      status: "Queer affirmative Medtech Application",
       color: "from-primary to-accent",
       image: pradallyHero
     },
     {
       title: "Scensora",
-      subtitle: "Candles & Cosmetics",
+      subtitle: "Personalised Candles",
       description: "Where neuroscience meets fragrance. Products that connect scent, touch, and memory to emotional well-being, creating therapeutic experiences through sensory innovation.",
       features: [
         "Neuroscience-inspired fragrances",
@@ -30,7 +30,7 @@ const Projects = () => {
         "Memory and emotion connection",
         "Wellness-focused design"
       ],
-      status: "UK-based Wellness Brand",
+      status: "India/UK-based sensory Brand",
       color: "from-secondary to-accent",
       image: scensoraHero
     },
@@ -138,8 +138,8 @@ const Projects = () => {
             <h3 className="text-3xl font-heading font-bold mb-8">Making Real Impact</h3>
             <div className="grid md:grid-cols-4 gap-8">
               <div>
-                <div className="text-4xl font-heading font-bold text-primary mb-2">NHS</div>
-                <p className="font-body text-muted-foreground">Clinical Entrepreneur Programme</p>
+                <div className="text-4xl font-heading font-bold text-primary mb-2">Top 16</div>
+                <p className="font-body text-muted-foreground">Santander X Launch 4.0 Entrepreneur</p>
               </div>
               <div>
                 <div className="text-4xl font-heading font-bold text-accent mb-2">BBC</div>
