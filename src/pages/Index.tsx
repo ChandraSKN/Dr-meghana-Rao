@@ -8,71 +8,56 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative flex items-center justify-center overflow-hidden min-h-[92svh] pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)]">
-  <GradientBackground />
-  <FloatingShapes />
+      <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
+        <GradientBackground />
+        <FloatingShapes />
 
-  <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-    <div className="mx-auto animate-fade-in">
-      <h1
-        className="font-heading font-bold mb-4 sm:mb-6 text-gradient animate-slide-up
-                   text-[clamp(1.75rem,7vw,3.75rem)] md:text-[clamp(2.75rem,5vw,4.5rem)]
-                   leading-[1.1] tracking-tight [text-wrap:balance]"
-      >
-        Healing, Innovation, and Impact
-      </h1>
-
-      <div
-        className="font-body text-muted-foreground mb-6 sm:mb-8 animate-fade-in
-                   text-[clamp(0.95rem,2.5vw,1.125rem)] md:text-[clamp(1.05rem,2vw,1.25rem)]"
-        style={{ animationDelay: '0.2s' }}
-      >
-        <span className="text-primary font-semibold">Clinical Pharmacist</span> •{' '}
-        <span className="text-accent font-semibold">Psychologist</span> •{' '}
-        <span className="text-secondary font-semibold">Social Entrepreneur</span>
-      </div>
-
-      <div
-        className="flex flex-col sm:flex-row gap-3 sm:gap-4 lg:gap-6 justify-center mb-8 sm:mb-12 animate-slide-up"
-        style={{ animationDelay: '0.4s' }}
-      >
-        <Link to="/projects" className="w-full sm:w-auto">
-          <Button className="btn-hero w-full">
-            <Play className="h-5 w-5 mr-2" />
-            View My Work
-          </Button>
-        </Link>
-        <Link to="/contact" className="w-full sm:w-auto">
-          <Button className="btn-hero-outline w-full">
-            Contact Me
-            <ArrowRight className="h-5 w-5 ml-2" />
-          </Button>
-        </Link>
-      </div>
-
-      {/* Floating elements */}
-      <div className="flex flex-wrap justify-center items-center gap-3 sm:gap-6 text-sm text-muted-foreground animate-float">
-        <div className="flex items-center gap-2">
-          <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
-          <span className="whitespace-nowrap">NHS Clinical Entrepreneur</span>
+        <div className="container mx-auto px-4 lg:px-6 text-center relative z-10">
+          <div className="max-w-5xl mx-auto animate-fade-in">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold mb-6 text-gradient animate-slide-up">
+              Healing, Innovation, and Impact
+            </h1>
+            <div className="text-lg md:text-xl lg:text-2xl font-body text-muted-foreground mb-8 animate-fade-in" style={{animationDelay: '0.2s'}}>
+              <span className="text-primary font-semibold">Clinical Pharmacist</span> • {' '}
+              <span className="text-accent font-semibold">Pyschology trainee</span> • {' '}
+              <span className="text-secondary font-semibold">Social Entrepreneur</span>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-4 lg:gap-6 justify-center mb-12 animate-slide-up" style={{animationDelay: '0.4s'}}>
+              <Link to="/projects">
+                <Button className="btn-hero w-full sm:w-auto">
+                  <Play className="h-5 w-5 mr-2" />
+                  View My Work
+                </Button>
+              </Link>
+              <Link to="/contact">
+                <Button className="btn-hero-outline w-full sm:w-auto">
+                  Contact Me
+                  <ArrowRight className="h-5 w-5 ml-2" />
+                </Button>
+              </Link>
+            </div>
+            
+            {/* Floating elements */}
+            <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8 text-sm text-muted-foreground animate-float">
+              {/* <div className="flex items-center space-x-2">
+                <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+                <span>NHS Clinical Entrepreneur</span>
+              </div> */}
+              <div className="flex items-center space-x-2">
+                <div className="w-2 h-2 bg-accent rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
+                <span>BBC Featured</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <div className="w-2 h-2 bg-secondary rounded-full animate-pulse" style={{animationDelay: '2s'}}></div>
+                <span>Tata Scholar</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="flex items-center gap-2">
-          <div className="w-2 h-2 bg-accent rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
-          <span className="whitespace-nowrap">BBC Featured</span>
+        <div className="absolute bottom-0 left-0 w-full">
+          <WaveDivider />
         </div>
-        <div className="flex items-center gap-2">
-          <div className="w-2 h-2 bg-secondary rounded-full animate-pulse" style={{ animationDelay: '2s' }}></div>
-          <span className="whitespace-nowrap">Tata Scholar</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div className="absolute bottom-0 left-0 w-full">
-    <WaveDivider />
-  </div>
-</section>
-
+      </section>
 
       {/* Quick Intro Section */}
       <section className="section-padding bg-muted/30 relative">
@@ -80,12 +65,14 @@ const Index = () => {
 
         <div className="container mx-auto max-w-4xl text-center relative z-10">
           <div className="animate-fade-in">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-8">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold">
               Building Bridges Between{' '}
-              <span className="text-gradient">Science & Humanity</span>
+              <span className="text-gradient inline-block px-6 py-2 mx-6">
+                Science & Humanity
+              </span>
             </h2>
             <p className="text-lg lg:text-xl font-body text-muted-foreground leading-relaxed mb-8">
-              I'm Meghana Rao Nadendla, bridging clinical expertise with innovation. My work 
+              I'm Meghana Rao Nadendla (Nadella), bridging clinical expertise with innovation. My work 
               spans from LGBTQIA+ digital health solutions to sensory well-being products, 
               always with the goal of creating more inclusive, empowering healthcare systems.
             </p>

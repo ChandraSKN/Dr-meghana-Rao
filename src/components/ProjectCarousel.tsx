@@ -1,18 +1,18 @@
 import { useState } from 'react';
 import { ChevronLeft, ChevronRight, ExternalLink, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import pradallyHero from '@/assets/pridally-hero.jpg';
+import pradallyHero from '@/assets/Pridally_logo.jpg';
 import scensoraHero from '@/assets/scensora-hero.jpg';
-import speak2makeHero from '@/assets/speak2make-hero.jpg';
+import speak2makeHero from '@/assets/speak2megh.jpeg';
 
 const projects = [
   {
     title: "PRIDalLY",
     subtitle: "LGBTQIA+ Health App",
     description: "A new model of inclusive healthcare based on the FiHolistic model covering physical, mental, social, reproductive, and sexual health.",
-    status: "NHS Clinical Entrepreneur Programme",
     color: "from-primary to-accent",
-    image: pradallyHero
+    image: pradallyHero,
+    status: "Queer affirmative Medtech Application"
   },
   {
     title: "Scensora",
