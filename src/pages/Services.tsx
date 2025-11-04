@@ -1,5 +1,6 @@
 import { Users, Lightbulb, Mic, Calendar } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 import { FloatingShapes, GradientBackground, CardDecoration } from '@/components/SVGDecorations';
 
 const Services = () => {
@@ -115,20 +116,24 @@ const Services = () => {
                 Let's work together to create meaningful impact in healthcare and beyond.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button 
-                  size="lg" 
-                  className="bg-white text-primary hover:bg-white/90 px-8 py-4 rounded-2xl font-semibold transform hover:scale-105 transition-all duration-300"
-                >
-                  <Calendar className="h-5 w-5 mr-2" />
-                  Book a Session
-                </Button>
-                <Button 
-                  variant="outline" 
-                  size="lg"
-                  className="border-white text-white bg-white/10 hover:bg-white/20 px-8 py-4 rounded-2xl font-semibold transform hover:scale-105 transition-all duration-300"
-                >
-                  View Portfolio
-                </Button>
+                <Link to="/contact">
+                  <Button 
+                    size="lg" 
+                    className="bg-white text-primary hover:bg-white/90 px-8 py-4 rounded-2xl font-semibold transform hover:scale-105 transition-all duration-300"
+                  >
+                    <Calendar className="h-5 w-5 mr-2" />
+                    Contact Me & Schedule a Call
+                  </Button>
+                </Link>
+                <Link to="/resume">
+                  <Button 
+                    variant="outline" 
+                    size="lg"
+                    className="border-white text-white bg-white/10 hover:bg-white/20 px-8 py-4 rounded-2xl font-semibold transform hover:scale-105 transition-all duration-300"
+                  >
+                    View Portfolio
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>

@@ -161,7 +161,7 @@ const About = () => {
                 </div>
               )}
               
-              <a href="#" className="inline-flex items-center gap-2 text-primary font-medium hover:text-primary/80 transition-colors">
+              <a className="inline-flex items-center gap-2 text-primary font-medium hover:text-primary/80 transition-colors">
                 <Mic className="w-5 h-5" />
                 → BBC Essex Link
               </a>
@@ -227,7 +227,10 @@ const About = () => {
                 I also host a reflective LinkedIn series called <em>Adultrated Adults</em>, a creative space where I view pharmacy and psychology through a single, honest lens, exploring what it means to grow, heal, and find balance in a complex world.
               </p>
               <div className="space-y-4">
-                <a href="https://www.linkedin.com/in/dr-meghana-nadendla-gmbpss-88a346128/" className="inline-flex items-center gap-2 text-primary font-medium hover:text-primary/80 transition-colors">
+                <a href="https://www.linkedin.com/in/dr-meghana-nadendla-gmbpss-88a346128/" className="inline-flex items-center gap-2 text-primary font-medium hover:text-primary/80 transition-colors"
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                >
                   → View my work on LinkedIn
                 </a>
                 <div>
