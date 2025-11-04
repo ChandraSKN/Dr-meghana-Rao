@@ -146,6 +146,8 @@ const Contact = () => {
                     <a
                       key={index}
                       href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="flex items-center space-x-4 p-4 rounded-xl border border-border hover:bg-muted/50 transition-colors group"
                     >
                       <div className="w-10 h-10 bg-muted rounded-lg flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
